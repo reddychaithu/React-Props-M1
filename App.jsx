@@ -1,4 +1,4 @@
-// Props Concept Method 2
+// Props Concept 
 import react from "react"
 
 // Parent Component
@@ -16,14 +16,11 @@ function Booklist()
 // Child Component
 function Book(props)
 {
-  console.log(props);
-
-  const {title, author, age} = props;
   return(
     <div>
-      <h1>{title}</h1>
-      <p>{author}</p>
-      <h2>{age}</h2>
+      <h1>{props.title}</h1>
+      <p>{props.author}</p>
+      <h2>{props.age}</h2>
     </div>
   )
 }
